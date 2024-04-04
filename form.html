@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <form action="">
+        <h1>Регистрация</h1>
+        <div class="wrapper">
+            <label for="name">Имя</label>
+            <input type="text" placeholder="Имя" name="name">
+        </div>
+        <div class="wrapper">
+            <label for="surname">Фамилия</label>
+            <input type="text" placeholder="Фамилия" name="surname">
+        </div>
+        <div class="wrapper">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" name="email">
+        </div>
+        <div class="wrapper">
+            <label for="password">Пароль</label>
+            <input type="text" placeholder="Пароль" name="password">
+        </div>
+        <!-- TODO: Заменить тип на password. -->
+        <div class="wrapper">
+            <label for="repeat-password">Повторите пароль</label>
+            <input type="text" placeholder="Подтвердите пароль" name="repeat-password">
+        </div>
+        <div class="wrapper">
+            <label for="birthday">дата рождения</label>
+            <input type="date" name="birthday">
+        </div>
+        <button disabled>Отправить</button>
+
+        <div class="errors">
+            <!-- <p class="error">Имя не должно быть пустым</p>
+            <p class="error">Фамилия не должна быть пустой</p>
+            <p class="error">Введите существующий Email адрес</p>
+            <p class="error">Пароли не совпадают</p>
+            <p class="error">Минимальная длина пароля - 8 символов</p>
+            <p class="error">Пароль должен содержать хотя бы одну цифру</p>
+            <p class="error">Пароль должен содержать хотя бы одну заглавную букву</p>
+            <p class="error">Пароль должен содержать хотя бы одну строчную букву</p>
+            <p class="error">Пароль должен содержать хотя бы один символ</p> -->
+        </div>
+    </form>
+
+    <script src="./js/form.js"></script>
+</body>
+</html>

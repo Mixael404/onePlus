@@ -1,0 +1,25 @@
+p{
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+form{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input{
+    display: block;
+}
+.error{
+    margin-bottom: 6px;
+}
