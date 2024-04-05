@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <header class="header">
+                        <img src="./assets/logo.png" class="img-fluid" alt="">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <img src="./assets/search.png" alt="">
+                            </div>
+                            <input id="standart" type="text" placeholder="Поиск...">
+                        </div>
+
+                        <div class="search-area">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <img src="./assets/search.png" alt="">
+                                </div>
+                                <input id="active" type="text" placeholder="Поиск..." value="Анастасия">
+                            </div>
+                            <div class="search-area__options">
+                                <div class="options__option">
+                                    <img src="./assets/persons/124.png" alt="" height="24" width="24">
+                                    <strong>Анастасия Ивлеева</strong>
+                                </div>
+                                <div class="options__option">
+                                    <img src="./assets/persons/125.png" alt="" height="24" width="24">
+                                    <strong>Анастасия Задорожная</strong>
+                                </div>
+                                <div class="options__option">
+                                    <img src="./assets/persons/126.png" alt="" height="24" width="24">
+                                    <strong>Анастасия Макеева</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline-warning">Вход</button>
+                        <button class="btn btn-warning">Регистрация</button>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="options">
+                        <select name="" id="" class="options__filtres custom-select">
+                            <option value="" defaultValue>Фильтры</option>
+                        </select>
+                        <div class="input-group options__search">
+                            <div class="input-group-prepend">
+                                <img src="./assets/search.png" alt="">
+                            </div>
+                            <input type="text" placeholder="Поиск...">
+                        </div>
+                        <select name="" id="" class="options__sorting custom-select">
+                            <option value="" defaultValue>По умолчанию</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="item-wrapper">
+                        <img src="./assets/persons/nastya.png" alt="Nastya" class="item-wrapper__img img-fluid">
+                        <p class="item-wrapper__title">Без слов</p>
+                        <div class="item-wrapper__author">
+                            <img src="./assets/persons/nastya-mini.png" alt="" class="author__photo" width="48" height="48">
+                            <div class="author__text">
+                                <p class="author__name">
+                                    Настя Ивлеева Вячеславовна
+                                </p>
+                                <p class="author__checked">
+                                    проверено
+                                    <img src="./assets/yes.png" alt="" width="14" height="14">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__rarity">
+                            <p class="rarity__text">Редкость:</p>
+                            <div class="rarity__mark">
+                                <p>уникальная</p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper__price">
+                            <p class="price__text">Цена:</p>
+                            <button class="price__btn">
+                                От 500 ₽
+                            </button>
+                        </div>
+                        <button class="item-wrapper__buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="pagination">
+                        <span class="pagination__quote">«</span>
+                        <span class="pagination__number_selected">1</span>
+                        <span class="pagination__number">2</span>
+                        <span class="pagination__number">3</span>
+                        <span class="pagination__number">4</span>
+                        <span class="pagination__number">5</span>
+                        <span class="pagination__quote">»</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="footer__lists">
+                        <div class="footer__text-list NFT">
+                            <p class="text-list__title">NFT</p>
+                            <p class="text-list__item">Что такое NFT</p>
+                            <p class="text-list__item">Создайте NFT с нами</p>
+                        </div>
+                        <div class="footer__text-list company">
+                            <p class="text-list__title">Компания</p>
+                            <p class="text-list__item">О нас</p>
+                            <p class="text-list__item">Отправить запрос</p>
+                        </div>
+                        <div class="footer__text-list other">
+                            <p class="text-list__title">Другое</p>
+                            <p class="text-list__item">Условия использования</p>
+                            <p class="text-list__item">Политика конфиденциальности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="footer__icons">
+                        <img src="./assets/twitter.png" alt="" width="20" height="20">
+                        <img src="./assets/image.png" alt="" width="20" height="20">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="footer__line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="footer__email">
+                        @ tnft.ru Company, Inc
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/star.png" alt="" width="66" height="61" class="footer__star">
+    </footer>
+    <img src="./assets/light1.png" class="light1" alt="">
+    <img src="./assets/light2.png" class="light2" alt="">
+    <img src="./assets/light3.png" class="light3" alt="">
+    <script>
+        const inActiveInput = document.getElementById('standart')
+        const searchArea = document.querySelector('.search-area')
+
+        inActiveInput.addEventListener('focus', (e) => {
+            searchArea.classList.remove('hidden')
+        })
+        searchArea.addEventListener('click', (e) => {
+            if(e.target.tagName !== 'INPUT'){
+                searchArea.classList.add('hidden')
+            }
+        })
+    </script>
+</body>
+
+</html>

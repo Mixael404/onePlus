@@ -37,6 +37,7 @@ function renderErrors() {
   });
 }
 
+
 (function validateName() {
   // Только латиница и кириллица. От 4 до 20 символов
   const validMask = /^[а-яёА-ЯЁa-zA-Z]{4,20}$/;
@@ -136,13 +137,14 @@ function renderErrors() {
 
   passwordInput.addEventListener("blur", (e) => {
     const value = e.target.value;
-
+    const passwordSubmition = form.querySelector('[name="repeat-password"]');
     errors = resetCurrentErrors([
       "shortPassword",
       "noNumber",
       "noUpperCase",
       "noLowerCase",
       "noSymbol",
+      "notSamePasswsords"
     ]);
 
     if (!value.match(validMask)) {
@@ -162,6 +164,9 @@ function renderErrors() {
         );
       if (!value.match(isSymbol))
         createError("noSymbol", "Пароль должен содержать хотя бы один символ");
+        if (e.target.value !== passwordSubmition.value) {
+          createError("notSamePasswsords", "Пароли не совпадают");
+        }
     }
     renderErrors();
     validateBtn();

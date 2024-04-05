@@ -1,9 +1,20 @@
-.blue-bg{
-    background-color: blue;
+.blue-bg {
+  background-color: blue;
 }
-.green-bg{
-    background-color: green;
+.green-bg {
+  background-color: green;
 }
-td{
-    text-align: center;
+td {
+  text-align: center;
+  padding: 3px;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #ccc;
 }
