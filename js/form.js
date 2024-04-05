@@ -43,12 +43,12 @@ function renderErrors() {
   const validMask = /^[а-яёА-ЯЁa-zA-Z]{4,20}$/;
   const name = form.querySelector('[name="name"]');
   const isNumber = /.*[0-9].*/;
-  const isSymbol = /(?=.*\W.*)/;
+  const isSymbol = /(?=.*[^а-яёА-ЯЁa-zA-Z0-9].*)/;
 
   name.addEventListener("blur", (e) => {
     const value = e.target.value;
 
-    errors = resetCurrentErrors(["illegalName", "shortName", "longName"]);
+    errors = resetCurrentErrors(["numbersName", "shortName", "longName", 'symbolsName']);
     if (!value.match(validMask)) {
       if (value.length < 4) {
         createError("shortName", "Слишком короткое имя");
@@ -59,11 +59,11 @@ function renderErrors() {
       }
 
       if (value.match(isNumber)) {
-        createError("illegalName", "Имя содержит цифры");
+        createError("numbersName", "Имя содержит цифры");
       }
 
       if (value.match(isSymbol)) {
-        createError("illegalName", "Имя содержит символы");
+        createError("symbolsName", "Имя содержит символы");
       }
     }
     renderErrors();
@@ -77,7 +77,7 @@ function renderErrors() {
   const validMask = /^[а-яёА-ЯЁa-zA-Z]{4,20}$/;
   const surname = form.querySelector('[name="surname"]');
   const isNumber = /.*[0-9].*/;
-  const isSymbol = /(?=.*\W.*)/;
+  const isSymbol = /(?=.*[^а-яёА-ЯЁa-zA-Z0-9].*)/;
 
   surname.addEventListener("blur", (e) => {
     const value = e.target.value;
